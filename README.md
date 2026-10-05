@@ -33,6 +33,10 @@ npm run lint
 
 The frontend works on its own. Without the API, the SymPy panels (algebra behind the limit, step-by-step rules) show a hint to start the server, and typed answers are checked in the browser instead.
 
+## Documentation
+
+Project documentation lives in [`docs/`](docs/README.md): architecture, structure, frontend and backend implementation, a lesson-authoring guide, testing, a decision log, progress, and session logs. **[`docs/handoff.md`](docs/handoff.md) always describes the latest state and next steps.**
+
 ## Stack and why
 
 | Layer | Choice | Why |
