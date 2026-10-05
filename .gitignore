@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+*.log
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+
+# Local environment
+.env
+.env.*
+!.env.example

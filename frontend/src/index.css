@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+
+  /* Semantic colours shared by every lesson. Keep in sync with src/lib/colors.ts. */
+  --color-average: #ea580c;
+  --color-instant: #2563eb;
+  --color-curve: #1e293b;
+}
+
+html {
+  background: var(--color-slate-50);
+  color: var(--color-slate-800);
+}
+
+/* Light theme for every Mafs graph (Mafs ships dark by default). */
+html .MafsView {
+  --mafs-bg: #ffffff;
+  --mafs-fg: #1e293b;
+  --mafs-origin-color: #475569;
+  --mafs-line-color: #cbd5e1;
+  --grid-line-subdivision-color: #eef2f7;
+  --mafs-blue: #2563eb;
+  --mafs-orange: #ea580c;
+  border-radius: 0.75rem;
+}
+
+/* Presentation mode: the lesson fills a projector screen. */
+.lesson-player:fullscreen {
+  overflow-y: auto;
+  background: var(--color-slate-50);
+  padding: 2rem 3rem;
+  font-size: 1.15rem;
+}
+
+/* Long display formulas scroll sideways on narrow screens instead of widening the page. */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 0.25em;
+}
